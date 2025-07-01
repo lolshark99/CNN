@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-filter1 = np.random.randn(100,3,3,2)
-x = np.random.randn(4, 3, 3, 2)
+filter1 = np.random.randn(100,3,3,2) # this shows 100 filters of dimension 3x3x2 i.e a 3x3 grid with 2 channels
+x = np.random.randn(4, 3, 3, 2) # same way the input image can be described, but care must be taken as the no of channels of both the i/p img anf the filter must be same
 b = np.zeros((100 , 1 , 1 , 1))
 
 
