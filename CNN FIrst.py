@@ -65,3 +65,8 @@ def max_pool(Z , size = 2 , stride = 2):
 
 output2 = max_pool(output1 , size = 2 , stride = 2)
 print(output2.shape)
+output3 = first_conv(x_pad , filter1 ,b,stride = 2)
+print(output.shape)
+output4 = max_pool(output3)
+print(output4.shape)
+
