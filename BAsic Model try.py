@@ -4,7 +4,7 @@ import cv2
 import torch.nn as nn
 import kagglehub
 import torch.optim as optim
-# Download latest version
+
 path = kagglehub.dataset_download("msambare/fer2013")
 
 print("Path to dataset files:", path)
@@ -33,8 +33,8 @@ class EmotionCNN(nn.Module):
         return X
 model = EmotionCNN()
      
-dummy_input = torch.randn(1, 1, 48, 48)
+trial_input = torch.randn(1, 1, 48, 48)
 
-# Forward pass
-output = model(dummy_input)
-print("Output shape:", output.shape)  # Should be [1, 7] for 7 classes
+
+output = model(trial_input)
+print("Output shape:", output.shape)  
