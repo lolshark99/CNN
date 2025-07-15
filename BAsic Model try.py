@@ -1,3 +1,4 @@
+#making a basic CNN model consisting of 2 fully connected layers and all other feature like max_pool and conv etc.
 import numpy as np
 import torch
 import cv2
