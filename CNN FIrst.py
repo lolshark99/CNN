@@ -5,7 +5,7 @@ x = np.random.randn(4, 3, 3, 2) # same way the input image can be described, but
 b = np.zeros((100 , 1 , 1 , 1))
 
 
-def zero_pad(x , pad):
+def zero_pad(x , pad):#adding a zero pad around the image so that its dimensions remain the same during convolution
     x_pad = np.pad(x , ((0,0) , (pad,pad) , (pad,pad) , (0,0)) ,mode = 'constant' , constant_values = (0,0))
     return x_pad
 
